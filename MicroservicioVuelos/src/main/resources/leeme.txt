@@ -1,0 +1,24 @@
+ Este microservicio gestiona la información de vuelos disponibles en la agencia de viajes. 
+ Utiliza una tabla de vuelos en la base de datos que incluye detalles sobre cada vuelo:
+  como la compañía, la fecha de vuelo, el precio y las plazas disponibles.
+ 
+ Proporciona endpoints REST para obtener vuelos y actualizar la disponibilidad de plazas.
+ 
+ GET /vuelos: Devuelve la lista de vuelos disponibles, filtrando por plazas.
+ http://localhost:8081/vuelos?plazas=5 Listar los vuelos con plazas suficientes
+ 
+ 
+PUT /vuelos/{idVuelo}/plazas: Actualiza las plazas de un vuelo específico.
+http://localhost:8081/vuelos/1/plazas
+Cuerpo de la petición (JSON):
+{
+    "plazasReservadas": 2 Número de plazas que se han reservado y deben restarse del total disponible.
+}
+
+
+
+
+
+http://localhost:8081/vuelos/1/plazas?plazasReservadas=2 actualizar las plazas de un vuelo
+Este ejemplo intentará reducir las plazas disponibles para el vuelo con idVuelo = 1 en 2 plazas.
+Comprobacion: http://localhost:8081/vuelos?plazas=3

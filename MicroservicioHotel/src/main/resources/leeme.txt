@@ -1,0 +1,8 @@
+Este microservicio proporciona información sobre los hoteles y permite realizar consultas sobre su disponibilidad y detalles específicos. 
+Trabaja con una base de datos en la que se almacena información sobre los hoteles:
+ Campos idHotel, nombre, categoria, precio y disponible
+ 
+ Endpoints:
+ GET Devuelve una lista de todos los hoteles que están disponibles  http://localhost:8080/hoteles
+ 
+ GET Devuelve los detalles de un hotel específico a partir de su nombre. http://localhost:8082/hoteles/HotelA

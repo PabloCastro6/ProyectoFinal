@@ -1,0 +1,11 @@
+Dependencias: Spring Web, Spring Data JPA, H2 Database
+
+Gestiona las reservas en la agencia de viajes. 
+Utiliza una tabla de reservas en la base de datos que incluye información sobre cada reserva realizada.
+Cliente, su identificación, el hotel, y el vuelo asociado.
+
+1- Crear Proyecto y poner dependencias necesarias según tecnologías
+2- Definir el modelo de datos
+3- Crear capa Repository
+4- Logica en la capa de negocio 
+5- Implementar el controlador (@RestController, @Autowired, hacer mapeos)
