@@ -1,0 +1,43 @@
+VERIFICACION MICROSERVICIO HOTEL:
+Obtener Lista de Hoteles Disponibles 
+Metodo GET:
+http://localhost:8080/hoteles/disponibles
+
+Obtener Datos de un Hotel por Nombre
+Metodo GET: 
+http://localhost:8080/hoteles/{nombre}
+
+
+
+
+VERIFICACION MICROSERVICIO VUELOS: 
+ Obtener Lista de Vuelos Disponibles para una Cantidad de Plazas
+Metodo GET: 
+http://localhost:8081/vuelos?plazas={número_de_plazas}  
+
+
+
+Actualizar Plazas Disponibles en un Vuelo
+Metodo POST: 
+http://localhost:8081/vuelos/{idVuelo}/plazas?plazasReservadas={número} 
+
+
+
+
+VERIFICAR MICROSERVICIO RESERVAS: 
+Registrar una Nueva Reserva
+Metodo POST: 
+POST http://localhost:8082/reservas?totalPersonas=3 
+Cuerpo: JSON con la estructura
+{
+  "idVuelo": 1,
+  "idHotel": 2,
+  "nombreCliente": "Juan Pérez",
+  "dni": "12345678A",
+}
+
+
+Obtener Reservas por Nombre de Hotel
+Metodo: GET
+http://localhost:8082/reservas/hotel/{nombreHotel} X
+
