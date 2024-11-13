@@ -17,7 +17,7 @@ Tecnologías Utilizadas
 - JUnit: Pruebas unitarias en Java.
   
 Inicio Rápido
-Clonar el repositorio: git clone https://github.com/xxx.git
+Clonar el repositorio: git clone 
 
 Entidades
 Hotel: Representa un hotel con las propiedades idHotel, nombre, categoría, precio y disponibilidad.
